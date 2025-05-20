@@ -27,9 +27,9 @@ pipeline {
         sh 'mvn compile'        
       }
     }
-    stage('Unit Test the code'){
+    stage('Build the Application'){
       steps {
-        echo 'Unit testing the code'
+        sh 'mvn clean package'
       }
     }     
   }
