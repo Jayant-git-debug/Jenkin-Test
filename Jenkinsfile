@@ -24,7 +24,7 @@ pipeline {
     }
     stage('Compile and Build the App'){
       steps {
-        echo 'mvn compile'        
+        sh 'mvn compile'        
       }
     }
     stage('Unit Test the code'){
