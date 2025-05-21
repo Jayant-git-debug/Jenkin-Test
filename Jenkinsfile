@@ -24,7 +24,7 @@ pipeline{
             steps{
                 sh '''
                 docker build -t jayant700/maven-docker-app02 .
-                docker container run -d --name project32 -p 8080:8082 jayant700/maven-docker-app02
+                docker container run -d --name project32 jayant700/maven-docker-app02
                 '''
             }
 
