@@ -24,7 +24,7 @@ pipeline{
             steps{
                 sh '''
                 docker build -t jayant700/maven-docker-app02 .
-                docker conatiner run --name project03 -it jayant700/maven-docker-app02
+                docker container run --name project03 -it jayant700/maven-docker-app02
                 '''
             }
 
